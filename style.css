@@ -133,3 +133,17 @@ p {
   color: #2690d4;
   text-decoration: none;
 }
+
+/* media query */
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+}
